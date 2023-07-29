@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5539576605318182653}
   - component: {fileID: 8702707436123503830}
   - component: {fileID: 5104760681470204035}
-  - component: {fileID: 6552408945397064076}
   m_Layer: 0
   m_Name: CrabEnemy
   m_TagString: Enemy
@@ -146,18 +145,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3479699, y: 0.20195493}
   m_EdgeRadius: 0
---- !u!114 &6552408945397064076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8140935769930056595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ef28af180b9dc5498973f5cf3385404, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _projectilePrefab: {fileID: 280894601043483598, guid: 420423389b5f1564ba5024a6ac0925e0, type: 3}
-  _minSpawnTime: 5
-  _maxSpawnTime: 10
