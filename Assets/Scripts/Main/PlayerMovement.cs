@@ -7,21 +7,23 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _gravityScale;
+    [SerializeField] private LayerMask _groundLayerMask;
 
+    private BoxCollider2D _collider;
     private Rigidbody2D _rigidbody;
     private float _horizontalInput;
-    private bool _isJumping;
 
     private void Start()
     {
         Physics2D.gravity = new Vector2(0f, -9.8f) * _gravityScale;
         _rigidbody = GetComponent<Rigidbody2D>();
+        _collider = GetComponent<BoxCollider2D>();
     }
 
     private void Update()
     {
         _horizontalInput = Input.GetAxisRaw("Horizontal");
-        if (Input.GetKeyDown(KeyCode.Space) && _isJumping == false)
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             Jump();
         }
@@ -40,14 +42,11 @@ public class PlayerMovement : MonoBehaviour
     private void Jump()
     {
         _rigidbody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
-        _isJumping = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private bool IsGrounded()
     {
-        if (collision.gameObject.tag == "Ground")
-        {
-            _isJumping = false;
-        }
+        RaycastHit2D raycast = Physics2D.Raycast(_collider.bounds.center, Vector2.down, _collider.bounds.extents.y + 0.1f, _groundLayerMask);
+        return raycast.collider != null;
     }
 }

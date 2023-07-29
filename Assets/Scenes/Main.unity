@@ -1111,7 +1111,7 @@ GameObject:
   - component: {fileID: 630203622}
   - component: {fileID: 630203621}
   - component: {fileID: 630203623}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24737,6 +24737,9 @@ MonoBehaviour:
   _moveSpeed: 7
   _jumpForce: 15
   _gravityScale: 4
+  _groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1398425211
 GameObject:
   m_ObjectHideFlags: 0
@@ -25637,7 +25640,7 @@ GameObject:
   - component: {fileID: 1980983675}
   - component: {fileID: 1980983674}
   - component: {fileID: 1980983676}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
