@@ -131,11 +131,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _maxSpawnTime
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _minSpawnTime
       value: 5
       objectReference: {fileID: 0}
@@ -615,11 +615,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _maxSpawnTime
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _minSpawnTime
       value: 5
       objectReference: {fileID: 0}
@@ -1205,6 +1205,8 @@ GameObject:
   - component: {fileID: 569383879}
   - component: {fileID: 569383878}
   - component: {fileID: 569383877}
+  - component: {fileID: 569383882}
+  - component: {fileID: 569383881}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1370,11 +1372,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _maxSpawnTime
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _minSpawnTime
       value: 5
       objectReference: {fileID: 0}
@@ -1951,11 +1953,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _maxSpawnTime
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _minSpawnTime
       value: 5
       objectReference: {fileID: 0}
@@ -2930,11 +2932,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _maxSpawnTime
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _minSpawnTime
       value: 5
       objectReference: {fileID: 0}
@@ -3277,11 +3279,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _maxSpawnTime
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _minSpawnTime
       value: 5
       objectReference: {fileID: 0}
@@ -3758,11 +3760,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _maxSpawnTime
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _minSpawnTime
       value: 5
       objectReference: {fileID: 0}
@@ -4035,11 +4037,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _maxSpawnTime
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6552408945397064076, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
+    - target: {fileID: 0}
       propertyPath: _minSpawnTime
       value: 5
       objectReference: {fileID: 0}
