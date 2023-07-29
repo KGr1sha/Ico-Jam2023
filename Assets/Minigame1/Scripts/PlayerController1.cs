@@ -10,7 +10,7 @@ public class PlayerController1 : MonoBehaviour
     [SerializeField] GameObject ballPrefab;
     
     Rigidbody2D rb;
-    Vector2 ballOffset;
+    Vector3 ballOffset;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,7 +29,9 @@ public class PlayerController1 : MonoBehaviour
     }
     public void ResetBall()
     {
-        Ball ball = Instantiate(ballPrefab, transform).GetComponent<Ball>();
+        Ball ball = Instantiate(ballPrefab).GetComponent<Ball>();
+        ball.transform.parent = transform;
+        ball.transform.position = transform.position + ballOffset;
     }
 
 }
