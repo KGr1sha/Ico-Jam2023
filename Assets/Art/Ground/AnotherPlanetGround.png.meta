@@ -119,19 +119,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -141,7 +128,7 @@ TextureImporter:
         serializedVersion: 2
         x: 145
         y: 255
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -150,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9311e9ba664b92542ab1067243e270e8
-      internalID: -1401739275
+      spriteID: c97148ea04fcdb44f8e01a2e625ca57f
+      internalID: 372414257
       vertices: []
       indices: 
       edges: []
@@ -162,7 +149,7 @@ TextureImporter:
         serializedVersion: 2
         x: 172
         y: 255
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -171,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 286965fb4df452a41bc6c34ea196afa5
-      internalID: -866647295
+      spriteID: ab1256b1709876749a218e01f7ecc557
+      internalID: 915506055
       vertices: []
       indices: 
       edges: []
@@ -181,9 +168,9 @@ TextureImporter:
       name: AnotherPlanetGround_2
       rect:
         serializedVersion: 2
-        x: 199
+        x: 200
         y: 255
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f74b4019a43e8743b8bcfc6f5b3ab49
-      internalID: 631503393
+      spriteID: 8a03ca879c90af94ca6976d6b76efc0a
+      internalID: 798630678
       vertices: []
       indices: 
       edges: []
@@ -202,9 +189,9 @@ TextureImporter:
       name: AnotherPlanetGround_3
       rect:
         serializedVersion: 2
-        x: 231
+        x: 232
         y: 255
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -213,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b2f1a2f58edffb4695437d9c8f93aca
-      internalID: -1278544070
+      spriteID: 9d2bb3e2e94b1dc4bbca96d13d960e4b
+      internalID: 421788615
       vertices: []
       indices: 
       edges: []
@@ -223,9 +210,9 @@ TextureImporter:
       name: AnotherPlanetGround_4
       rect:
         serializedVersion: 2
-        x: 258
+        x: 259
         y: 255
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -234,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46f67e513931db24c8972c65f0d9a87f
-      internalID: -2007414428
+      spriteID: f348ad31ff42cd745b0dd2ba5e8fabcd
+      internalID: -352639952
       vertices: []
       indices: 
       edges: []
@@ -246,7 +233,7 @@ TextureImporter:
         serializedVersion: 2
         x: 145
         y: 230
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -255,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5191f3886de5b9f479165e8feaa5d4a6
-      internalID: 1008021426
+      spriteID: 6600236b3315c014b81a1b4c047cde95
+      internalID: -881909366
       vertices: []
       indices: 
       edges: []
@@ -267,7 +254,7 @@ TextureImporter:
         serializedVersion: 2
         x: 172
         y: 230
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -276,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8d6780eb4da0ec43a9ee8253b0a1ef3
-      internalID: -1758945919
+      spriteID: 875aa746cfaab0f45ab5922915058c9c
+      internalID: 514809004
       vertices: []
       indices: 
       edges: []
@@ -286,9 +273,9 @@ TextureImporter:
       name: AnotherPlanetGround_7
       rect:
         serializedVersion: 2
-        x: 199
+        x: 200
         y: 230
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -297,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c827012b2821b44e93590e523352090
-      internalID: -1859795369
+      spriteID: 0c3ff10e84fe36f4c947705519e68b6c
+      internalID: -1551880587
       vertices: []
       indices: 
       edges: []
@@ -307,9 +294,9 @@ TextureImporter:
       name: AnotherPlanetGround_8
       rect:
         serializedVersion: 2
-        x: 231
+        x: 232
         y: 230
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -318,8 +305,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 270b22dfeb5be674bb66bed6acab5d1f
-      internalID: -1872758887
+      spriteID: 89b503ff566307541b431e50480b47e1
+      internalID: -326968596
       vertices: []
       indices: 
       edges: []
@@ -328,9 +315,9 @@ TextureImporter:
       name: AnotherPlanetGround_9
       rect:
         serializedVersion: 2
-        x: 258
+        x: 259
         y: 230
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -339,8 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c792fe6390170754a8ee3c0e08e619ac
-      internalID: -355362289
+      spriteID: 6d5a8b84a7e01c847ba75adcf7b7de7e
+      internalID: -1959050888
       vertices: []
       indices: 
       edges: []
@@ -351,7 +338,7 @@ TextureImporter:
         serializedVersion: 2
         x: 145
         y: 205
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -360,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5abbea03c8d3be4688e1f1db73eee8d
-      internalID: 88021157
+      spriteID: 6f8b7b420e3de7c4eadc7c2dca02b414
+      internalID: -1922295260
       vertices: []
       indices: 
       edges: []
@@ -372,7 +359,7 @@ TextureImporter:
         serializedVersion: 2
         x: 172
         y: 205
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -381,8 +368,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fbea3cdc1473404f9f4794902627a60
-      internalID: -327760848
+      spriteID: 09c6574b422dfda4ba7ad0ee487bd6d7
+      internalID: 127502855
       vertices: []
       indices: 
       edges: []
@@ -391,9 +378,9 @@ TextureImporter:
       name: AnotherPlanetGround_12
       rect:
         serializedVersion: 2
-        x: 199
+        x: 200
         y: 205
-        width: 24
+        width: 23
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -402,8 +389,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba0a7373b1d1e349a93e2b5bc3f7110
-      internalID: 460362591
+      spriteID: 89bb8c04ba71ea04db86ff009e5fb21d
+      internalID: -417510741
       vertices: []
       indices: 
       edges: []
@@ -419,19 +406,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AnotherPlanetGround_0: -1401739275
-      AnotherPlanetGround_1: -866647295
-      AnotherPlanetGround_10: 88021157
-      AnotherPlanetGround_11: -327760848
-      AnotherPlanetGround_12: 460362591
-      AnotherPlanetGround_2: 631503393
-      AnotherPlanetGround_3: -1278544070
-      AnotherPlanetGround_4: -2007414428
-      AnotherPlanetGround_5: 1008021426
-      AnotherPlanetGround_6: -1758945919
-      AnotherPlanetGround_7: -1859795369
-      AnotherPlanetGround_8: -1872758887
-      AnotherPlanetGround_9: -355362289
+      AnotherPlanetGround_0: 372414257
+      AnotherPlanetGround_1: 915506055
+      AnotherPlanetGround_10: -1922295260
+      AnotherPlanetGround_11: 127502855
+      AnotherPlanetGround_12: -417510741
+      AnotherPlanetGround_2: 798630678
+      AnotherPlanetGround_3: 421788615
+      AnotherPlanetGround_4: -352639952
+      AnotherPlanetGround_5: -881909366
+      AnotherPlanetGround_6: 514809004
+      AnotherPlanetGround_7: -1551880587
+      AnotherPlanetGround_8: -326968596
+      AnotherPlanetGround_9: -1959050888
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
