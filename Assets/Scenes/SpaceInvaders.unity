@@ -131,14 +131,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: _maxSpawnTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: _minSpawnTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8140935769930056595, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
       propertyPath: m_Name
       value: CrabEnemy (3)
@@ -615,14 +607,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: _maxSpawnTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: _minSpawnTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8140935769930056595, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
       propertyPath: m_Name
       value: CrabEnemy (5)
@@ -1205,8 +1189,6 @@ GameObject:
   - component: {fileID: 569383879}
   - component: {fileID: 569383878}
   - component: {fileID: 569383877}
-  - component: {fileID: 569383882}
-  - component: {fileID: 569383881}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1247,8 +1229,8 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 1
-  m_MatchWidthOrHeight: 0
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1372,14 +1354,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: _maxSpawnTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: _minSpawnTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8140935769930056595, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
       propertyPath: m_Name
       value: CrabEnemy (4)
@@ -1849,7 +1823,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011910773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalPosition: {x: -6, y: 3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1953,14 +1927,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: _maxSpawnTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: _minSpawnTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8140935769930056595, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
       propertyPath: m_Name
       value: CrabEnemy (6)
@@ -2932,14 +2898,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: _maxSpawnTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: _minSpawnTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8140935769930056595, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
       propertyPath: m_Name
       value: CrabEnemy (9)
@@ -3279,14 +3237,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: _maxSpawnTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: _minSpawnTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8140935769930056595, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
       propertyPath: m_Name
       value: CrabEnemy (1)
@@ -3760,14 +3710,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: _maxSpawnTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: _minSpawnTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8140935769930056595, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
       propertyPath: m_Name
       value: CrabEnemy (2)
@@ -4037,14 +3979,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449730083}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: _maxSpawnTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: _minSpawnTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8140935769930056595, guid: 36bc034e708e4e64f85dba3510d93b17, type: 3}
       propertyPath: m_Name
       value: CrabEnemy
