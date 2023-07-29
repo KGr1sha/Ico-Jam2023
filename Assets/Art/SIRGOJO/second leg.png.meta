@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f0cb15a4e196dd44fa73c370b34aa499
+=======
+<<<<<<< Updated upstream
+guid: 7c0c527e20aa1474b9c5f5a42e500972
+=======
+guid: b3d327cd49c5ca142aac8018687d1234
+>>>>>>> Stashed changes
+>>>>>>> 980dff32da2a82070b0cc18264429149138bdad6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +56,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 32
+=======
+  spritePixelsToUnits: 100
+>>>>>>> 980dff32da2a82070b0cc18264429149138bdad6
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,6 +131,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
@@ -132,6 +145,8 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> 980dff32da2a82070b0cc18264429149138bdad6
   spriteSheet:
     serializedVersion: 2
     sprites: []
