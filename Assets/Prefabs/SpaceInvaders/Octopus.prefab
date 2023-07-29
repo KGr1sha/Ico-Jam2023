@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997ff7f378284624a8c6e839c50e3e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingHealth: 3
+  _startingHealth: 1
   _deathExplosion: {fileID: 26402002879128654, guid: e908c0d0318b21943bb6a50ce3fe4f8d, type: 3}
 --- !u!61 &7780500791740847541
 BoxCollider2D:
@@ -160,4 +160,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectilePrefab: {fileID: 280894601043483598, guid: 420423389b5f1564ba5024a6ac0925e0, type: 3}
   _minSpawnTime: 3
-  _maxSpawnTime: 5
+  _maxSpawnTime: 10
