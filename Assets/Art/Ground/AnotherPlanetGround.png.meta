@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 23
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,7 +134,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: AnotherPlanetGround_0
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 255
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9311e9ba664b92542ab1067243e270e8
+      internalID: -1401739275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 255
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286965fb4df452a41bc6c34ea196afa5
+      internalID: -866647295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 255
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f74b4019a43e8743b8bcfc6f5b3ab49
+      internalID: 631503393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_3
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 255
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2f1a2f58edffb4695437d9c8f93aca
+      internalID: -1278544070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_4
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 255
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f67e513931db24c8972c65f0d9a87f
+      internalID: -2007414428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 230
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5191f3886de5b9f479165e8feaa5d4a6
+      internalID: 1008021426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_6
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 230
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d6780eb4da0ec43a9ee8253b0a1ef3
+      internalID: -1758945919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 230
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c827012b2821b44e93590e523352090
+      internalID: -1859795369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_8
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 230
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270b22dfeb5be674bb66bed6acab5d1f
+      internalID: -1872758887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_9
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 230
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c792fe6390170754a8ee3c0e08e619ac
+      internalID: -355362289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_10
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 205
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5abbea03c8d3be4688e1f1db73eee8d
+      internalID: 88021157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_11
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 205
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbea3cdc1473404f9f4794902627a60
+      internalID: -327760848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnotherPlanetGround_12
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 205
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba0a7373b1d1e349a93e2b5bc3f7110
+      internalID: 460362591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +418,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AnotherPlanetGround_0: -1401739275
+      AnotherPlanetGround_1: -866647295
+      AnotherPlanetGround_10: 88021157
+      AnotherPlanetGround_11: -327760848
+      AnotherPlanetGround_12: 460362591
+      AnotherPlanetGround_2: 631503393
+      AnotherPlanetGround_3: -1278544070
+      AnotherPlanetGround_4: -2007414428
+      AnotherPlanetGround_5: 1008021426
+      AnotherPlanetGround_6: -1758945919
+      AnotherPlanetGround_7: -1859795369
+      AnotherPlanetGround_8: -1872758887
+      AnotherPlanetGround_9: -355362289
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
