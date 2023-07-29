@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class DeathWall : MonoBehaviour
 {   
-    PlayerController controller;
+    PlayerController1 controller;
     GameSession gameSession;
 
     private void Start()
     {
-        controller = GameObject.Find("Player").GetComponent<PlayerController>();
+        controller = GameObject.Find("Player").GetComponent<PlayerController1>();
         gameSession = GameObject.Find("GameSession").GetComponent<GameSession>();
     }
 
