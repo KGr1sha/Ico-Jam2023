@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigame1.unity
     guid: 5b242d493d9a10244a2ba9518f9fb7b3
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: ec9b699304f863444a60cfaba44a15be
+  - enabled: 1
+    path: Assets/Scenes/SpaceInvaders.unity
+    guid: 13b6702ad851a214094294a9f8f12901
   m_configObjects: {}
