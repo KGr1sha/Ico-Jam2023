@@ -4,12 +4,17 @@ using UnityEngine;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] TMP_Text livesText;
+
     [SerializeField] int lives = 3;
 
-    bool result;
+    [SerializeField] GameObject gameOver;
+    [SerializeField] GameObject resultObj;
+
+    private Result resultScript;
 
     private void Start()
-    {
+    {   
+        resultScript = resultObj.GetComponent<Result>();
         livesText.text = lives.ToString();
     }
 
@@ -18,7 +23,8 @@ public class GameSession : MonoBehaviour
         var blocks = GameObject.FindGameObjectsWithTag("Block");
         if(blocks.Length == 0 )
         {
-            bool result = true;
+            resultScript.result = true;
+            gameOver.SetActive(true);
         }
     }
 
@@ -30,8 +36,8 @@ public class GameSession : MonoBehaviour
             livesText.text = lives.ToString();
         } else
         {
-            livesText.text = "Game Over!!!";
-            bool result = false;
+            resultScript.result = false;
+            gameOver.SetActive(true);
         }
     }
 }
