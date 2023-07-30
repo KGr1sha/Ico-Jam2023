@@ -24,7 +24,7 @@ public class AllienBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var damagableObject = collision.GetComponent<IDamagable>();
-        if (damagableObject != null)
+        if (damagableObject != null && collision.gameObject.CompareTag("Enemy"))
         {
             damagableObject.TakeDamage(1);
         }

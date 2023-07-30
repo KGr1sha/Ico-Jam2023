@@ -35,4 +35,12 @@ public class BaseEnemy : MonoBehaviour, IDamagable
     {
         _animator.SetTrigger("Damaged");
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<IDamagable>().TakeDamage(1);
+        }
+    }
 }

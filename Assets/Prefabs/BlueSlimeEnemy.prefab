@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7174741444457499662}
   m_Layer: 0
   m_Name: BlueSlimeEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,13 +103,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 3
   _patrolSpeed: 2
-  _patrolDistance: 4
-  _chaseSpeed: 3
-  _spotDistance: 3
   _playerMask:
     serializedVersion: 2
     m_Bits: 8
-  _playerTransform: {fileID: 0}
+  _groundMask:
+    serializedVersion: 2
+    m_Bits: 0
   _groundCheckObject: {fileID: 9010379565731836002}
 --- !u!95 &1152813156680967438
 Animator:
