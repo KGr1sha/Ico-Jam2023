@@ -26,19 +26,13 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         _horizontalInput = Input.GetAxisRaw("Horizontal");
-        if (_horizontalInput != 0f)
-        {
-            _animator.SetBool("iswalking", true);
-        }
-        else
-        {
-            _animator.SetBool("iswalking", false);
-        }
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             Jump();
         }
+
+        HandleAnimations();
     }
 
     private void FixedUpdate()
@@ -68,5 +62,26 @@ public class PlayerMovement : MonoBehaviour
     {
         RaycastHit2D raycast = Physics2D.Raycast(_collider.bounds.center, Vector2.down, _collider.bounds.extents.y + 0.1f, _groundLayerMask);
         return raycast.collider != null;
+    }
+
+    private void HandleAnimations()
+    {
+        if (_horizontalInput != 0f)
+        {
+            _animator.SetBool("iswalking", true);
+        }
+        else
+        {
+            _animator.SetBool("iswalking", false);
+        }
+
+        if (IsGrounded())
+        {
+            _animator.SetBool("jump", false);
+        }
+        else
+        {
+            _animator.SetBool("jump", true);
+        }
     }
 }
