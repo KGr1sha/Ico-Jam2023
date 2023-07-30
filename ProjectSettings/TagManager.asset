@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
+  - CactusTag
+  - LocationTemplate
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -12,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
@@ -41,4 +43,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1283823027
+    locked: 0
+  - name: Location
+    uniqueID: 3823059685
+    locked: 0
+  - name: UI
+    uniqueID: 4214906287
     locked: 0
