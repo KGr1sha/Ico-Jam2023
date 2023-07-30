@@ -6,7 +6,7 @@ public class Trap : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<IDamagable>().TakeDamage(1);
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
         }
     }
 }
