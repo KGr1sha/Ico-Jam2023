@@ -20,4 +20,14 @@ public class AllienBullet : MonoBehaviour
         yield return new WaitForSeconds(_lifeSpan);
         Destroy(this.gameObject);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var damagableObject = collision.GetComponent<IDamagable>();
+        if (damagableObject != null)
+        {
+            damagableObject.TakeDamage(1);
+        }
+        Destroy(gameObject);
+    }
 }

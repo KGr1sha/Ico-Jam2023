@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _gravityScale;
     [SerializeField] private LayerMask _groundLayerMask;
 
+    private FlipPlayer _flipScript;
     private BoxCollider2D _collider;
     private Rigidbody2D _rigidbody;
     private float _horizontalInput;
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
         Physics2D.gravity = new Vector2(0f, -9.8f) * _gravityScale;
         _rigidbody = GetComponent<Rigidbody2D>();
         _collider = GetComponent<BoxCollider2D>();
+        _flipScript = GetComponent<FlipPlayer>();
     }
 
     private void Update()
@@ -37,6 +39,14 @@ public class PlayerMovement : MonoBehaviour
     private void MoveCharacter(float direction)
     {
         _rigidbody.velocity = new Vector2(direction * _moveSpeed, _rigidbody.velocity.y);
+        if (direction < 0f)
+        {
+            _flipScript.SetLookDirection("left");
+        }
+        else if (direction > 0f)
+        {
+            _flipScript.SetLookDirection("right");
+        }
     }
 
     private void Jump()
