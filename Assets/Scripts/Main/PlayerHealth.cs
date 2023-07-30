@@ -16,6 +16,11 @@ public class PlayerHealth : MonoBehaviour, IDamagable
     public void TakeDamage(int amount)
     {
         _health -= amount;
+        Debug.Log("GET DAMAGED");
+        if (_health <= 0)
+        {
+            Die();
+        }
     }
     public void Die()
     {
