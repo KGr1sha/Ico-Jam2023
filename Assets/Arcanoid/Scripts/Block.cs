@@ -5,13 +5,14 @@ public class Block : MonoBehaviour
     int health;
     SpriteRenderer sp;
     Color[] colors = { Color.yellow , Color.blue , Color.red };
+    [SerializeField] Sprite[] sprites = new Sprite[3];
 
     private void Start()
     {   
         sp = GetComponent<SpriteRenderer>();
 
         health = Random.Range(1, 4);
-        sp.color = colors[health - 1];
+        sp.sprite = sprites[health - 1];
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -21,6 +22,6 @@ public class Block : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        sp.color = colors[health - 1];
+        sp.sprite = sprites[health - 1];
     }
 }
