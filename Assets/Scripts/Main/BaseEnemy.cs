@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BaseEnemy : MonoBehaviour, IDamagable
@@ -36,11 +34,11 @@ public class BaseEnemy : MonoBehaviour, IDamagable
         _animator.SetTrigger("Damaged");
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<IDamagable>().TakeDamage(1);
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
         }
     }
 }
