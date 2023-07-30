@@ -103834,6 +103834,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6688976646842155239, guid: 4d5e088fe84e1e14cb0bb8c1cc842515, type: 3}
+      propertyPath: _countdownTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8361861752415299452, guid: 4d5e088fe84e1e14cb0bb8c1cc842515, type: 3}
       propertyPath: m_Name
       value: MinigameLoader
