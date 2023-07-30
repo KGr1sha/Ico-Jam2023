@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _gravityScale;
     [SerializeField] private LayerMask _groundLayerMask;
+    [SerializeField] private Animator _animator;
 
     private FlipPlayer _flipScript;
     private BoxCollider2D _collider;
@@ -25,6 +26,15 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         _horizontalInput = Input.GetAxisRaw("Horizontal");
+        if (_horizontalInput != 0f)
+        {
+            _animator.SetBool("iswalking", true);
+        }
+        else
+        {
+            _animator.SetBool("iswalking", false);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             Jump();
