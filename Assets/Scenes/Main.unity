@@ -67656,8 +67656,9 @@ GameObject:
   m_Component:
   - component: {fileID: 873943383}
   - component: {fileID: 873943382}
+  - component: {fileID: 873943384}
   m_Layer: 0
-  m_Name: Minigame1
+  m_Name: Minigame1Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67716,13 +67717,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873943381}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.53, y: 23.98, z: -0.2668892}
+  m_LocalPosition: {x: 16.63, y: -2.42, z: -0.2668892}
   m_LocalScale: {x: 0.86713916, y: 5.9900703, z: 0.86713916}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &873943384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873943381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87971b6c6b8208245934a067a1d0e15b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelLoader: {fileID: 6437717054197774673}
 --- !u!1 &877992362
 GameObject:
   m_ObjectHideFlags: 0
@@ -74742,10 +74756,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361861752415299452, guid: 4d5e088fe84e1e14cb0bb8c1cc842515, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5e088fe84e1e14cb0bb8c1cc842515, type: 3}
+--- !u!114 &6437717054197774673 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6688976646842155239, guid: 4d5e088fe84e1e14cb0bb8c1cc842515, type: 3}
+  m_PrefabInstance: {fileID: 6437717054197774672}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a962f21dd1044409d28b4155945cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
