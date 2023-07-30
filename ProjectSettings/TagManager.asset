@@ -7,11 +7,13 @@ TagManager:
   - Ground
   - ScreenBounds
   - Enemy
+  - Block
+  - Ball
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Ground

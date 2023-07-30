@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        RaycastHit2D raycast = Physics2D.Raycast(_collider.bounds.center, Vector2.down, _collider.bounds.extents.y + 0.1f, _groundLayerMask);
+        RaycastHit2D raycast = Physics2D.BoxCast(_collider.bounds.center, _collider.bounds.size * 0.9f, 0, Vector2.down, 0.2f, _groundLayerMask);
         return raycast.collider != null;
     }
 
