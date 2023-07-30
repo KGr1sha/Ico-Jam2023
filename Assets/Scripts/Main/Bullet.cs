@@ -28,6 +28,6 @@ public class AllienBullet : MonoBehaviour
         {
             damagableObject.TakeDamage(1);
         }
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }

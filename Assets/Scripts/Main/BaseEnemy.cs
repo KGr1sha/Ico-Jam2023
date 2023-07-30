@@ -9,7 +9,7 @@ public class BaseEnemy : MonoBehaviour, IDamagable
     private Animator _animator;
     private int _health;
 
-    private void Start()
+    protected virtual void Start()
     {
         _health = _maxHealth;
         _animator = GetComponent<Animator>();
@@ -19,8 +19,11 @@ public class BaseEnemy : MonoBehaviour, IDamagable
     {
         _health -= amount;
         if (_health <= 0)
+        {
             Die();
-        DamageAnimation();
+        }
+        else
+            DamageAnimation();
     }
 
     public void Die()
