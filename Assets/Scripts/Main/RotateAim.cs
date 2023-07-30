@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RotateAim : MonoBehaviour
 {
-    [SerializeField] private Transform _aitTransform;
+    [SerializeField] private Transform _aimTransform;
     [SerializeField] private float _pistolAngle;
 
     private Camera _worldCamera;
@@ -18,9 +18,9 @@ public class RotateAim : MonoBehaviour
 
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
 
-        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(aimDirection.y, Mathf.Abs(aimDirection.x)) * Mathf.Rad2Deg;
         angle = Mathf.Clamp(angle, -_pistolAngle, _pistolAngle);
-        _aitTransform.eulerAngles = new Vector3(0, 0, angle);
+        _aimTransform.eulerAngles = new Vector3(0, _aimTransform.eulerAngles.y, angle);
     }
 
     private Vector3 GetMouseWorldPosition()

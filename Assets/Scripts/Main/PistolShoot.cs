@@ -12,7 +12,7 @@ public class PistolShoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && _canShoot)
+        if (Input.GetKey(KeyCode.Mouse0) && _canShoot)
         {
             Shoot();
         }    
