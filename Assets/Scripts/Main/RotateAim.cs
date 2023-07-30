@@ -18,19 +18,9 @@ public class RotateAim : MonoBehaviour
 
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
 
-        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-
-        if (angle > 90 ||  angle < -90)
-        {
-            _aimTransform.localScale = new Vector3(1, -1, 1);
-        }
-        else
-        {
-            _aimTransform.localScale = Vector3.one;
-        }
-
-        //angle = Mathf.Clamp(angle, -_pistolAngle, _pistolAngle);
-        _aimTransform.eulerAngles = new Vector3(0, 0, angle);
+        float angle = Mathf.Atan2(aimDirection.y, Mathf.Abs(aimDirection.x)) * Mathf.Rad2Deg;
+        angle = Mathf.Clamp(angle, -_pistolAngle, _pistolAngle);
+        _aimTransform.eulerAngles = new Vector3(0, _aimTransform.eulerAngles.y, angle);
     }
 
     private Vector3 GetMouseWorldPosition()
