@@ -19,7 +19,7 @@ public class MapMover : MonoBehaviour
 
     [SerializeField] private float nonBoostSpeedTime;
 
-    [SerializeField] private bool isPlay;
+    public bool isPlay;
 
     private void Update()
     {
