@@ -1,9 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FlyEnemy : BaseEnemy
 {
+    [SerializeField] private Transform _playerTransform;
+    [SerializeField] private float _agroDistance;
+
+    public float ChaseSpeed = 3f;
     public float PatrolSpeed = 1f;
     public float PatrolRange = 2f;
 
@@ -38,6 +40,9 @@ public class FlyEnemy : BaseEnemy
 
     private void CheckForPlayer()
     {
-
+        if (Vector3.Distance(transform.position, _playerTransform.position) < _agroDistance)
+        {
+            _stateMachine.SetBehaviourAgressive();
+        }
     }
 }
