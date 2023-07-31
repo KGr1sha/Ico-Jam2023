@@ -12,27 +12,27 @@ public class PlayerHealth : MonoBehaviour
     private DetailsResultText detailsResultText;
 
     private int _health;
+    private bool _isDead;
 
     private void Start()
     {
         _health = _maxHealth;
         detailsResultText = DeathScreen.GetComponent<DetailsResultText>();
+        _isDead = false;
     }
 
     public void TakeDamage(int amount)
     {
         _health -= amount;
-        Debug.Log("GET DAMAGED");
-        if (_health <= 0)
+        if (_health <= 0 && _isDead == false)
         {
             Die();
         }
     }
      private void Die()
     {
+        _isDead = true;
         _deathSound.Play();
-        //play animation
-        //yield return new WaitForSeconds(animationTime);
         detailsResultText.ResultChanger();
         DeathScreen.SetActive(true);
     }
