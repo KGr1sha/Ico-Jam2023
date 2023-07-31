@@ -10,6 +10,7 @@ namespace Assets.Scripts.Main
         private Vector2 _pointA;
         private Vector2 _pointB;
         private Vector2 _currentPoint;
+        private LayerMask _groundMask;
 
         private FlyingEnemyStates _enemy;
 
@@ -28,7 +29,7 @@ namespace Assets.Scripts.Main
         public void Update(FlyingEnemyStates enemy)
         {
             Move();
-
+            CheckForWalls();
             var distanceToPoint = Vector2.Distance(_enemy.transform.position, new Vector3(_currentPoint.x, _currentPoint.y, 0f));
 
             if (distanceToPoint < 0.5f)
@@ -62,6 +63,23 @@ namespace Assets.Scripts.Main
                 _currentPoint = _pointB;
             else
                 _currentPoint = _pointA;
+        }
+
+        private void CheckForWalls()
+        {
+            Vector2 castDir = Vector2.left;
+            if (_currentPoint == _pointA)
+                castDir = Vector2.left;
+            if (_currentPoint == _pointB)
+                castDir = Vector2.right;
+
+            RaycastHit2D cast = Physics2D.Raycast(_enemy.transform.position, castDir, 0.2f, _groundMask);
+            //Debug.DrawLine(_enemy.transform.position, _enemy.transform.position + new Vector3(castDir.x, castDir.y, 0));
+            if (cast)
+            {
+                ChangePatrolPoint();
+            }
+
         }
     }
 }

@@ -8,6 +8,7 @@ public class FlyEnemy : BaseEnemy
     public float ChaseSpeed = 3f;
     public float PatrolSpeed = 1f;
     public float PatrolRange = 2f;
+    public LayerMask GroundLayer;
     public Transform playerTransform { get; private set; }
 
     private FlyingEnemyStates _stateMachine;
