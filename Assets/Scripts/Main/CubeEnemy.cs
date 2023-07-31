@@ -54,8 +54,7 @@ public class CubeEnemy : BaseEnemy
         RaycastHit2D groundCast = Physics2D.Raycast(_groundCheckObject.position, Vector2.down, 0.3f, _groundMask);
         if (wallCast.collider != null || groundCast.collider == null)
         {
-            if (wallCast && wallCast.transform.gameObject.CompareTag("Player") == false)
-                val = true;
+            val = true;
         }
 
         return val;
