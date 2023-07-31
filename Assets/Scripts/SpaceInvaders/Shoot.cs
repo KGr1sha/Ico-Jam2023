@@ -6,6 +6,7 @@ public class Shoot : MonoBehaviour
 {
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _shotCD;
+    [SerializeField] private AudioSource _shotSound;
 
     private bool _canShoot = true;
 
@@ -20,6 +21,7 @@ public class Shoot : MonoBehaviour
     private void ShootBullet()
     {
         Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
+        _shotSound.Play();
         _canShoot = false;
         StartCoroutine(ShootingCD());
     }
