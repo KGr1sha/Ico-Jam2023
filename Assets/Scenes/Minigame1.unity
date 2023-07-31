@@ -2045,7 +2045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livesText: {fileID: 1574488682}
-  lives: 1
+  lives: 3
   gameOver: {fileID: 1263192097}
   resultObj: {fileID: 937465227}
 --- !u!4 &608735255
@@ -4239,7 +4239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361861752415299452, guid: 4d5e088fe84e1e14cb0bb8c1cc842515, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8382327541549667338, guid: 4d5e088fe84e1e14cb0bb8c1cc842515, type: 3}
       propertyPath: m_IsActive

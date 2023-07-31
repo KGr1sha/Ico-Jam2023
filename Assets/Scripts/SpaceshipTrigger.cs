@@ -28,11 +28,11 @@ public class SpaceshipTrigger : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Enter");
-            if (data.Fragment1Collected && data.Fragment2Collected && data.Fragment3Collected && !shipRepaired)
+            if (data.Fragment1Collected && data.Fragment2Collected && data.Fragment3Collected && !isShipRepaired)
             {
                 putFargmetsText.text = "Press \"F\" to repair your spaceship";
             }
-            else if (!shipRepaired)
+            else if (!isShipRepaired)
             {
                 putFargmetsText.text = "You need to find all of the fragments";
             }
@@ -44,7 +44,7 @@ public class SpaceshipTrigger : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (Input.GetButtonDown("Start") && data.Fragment1Collected && data.Fragment2Collected && data.Fragment3Collected && !shipRepaired)
+            if (Input.GetButtonDown("Start") && data.Fragment1Collected && data.Fragment2Collected && data.Fragment3Collected && !isShipRepaired)
             {
                 putFargmetsText.text = "Congratulations!!!";
                 shipSprite.sprite = shipRepaired;
