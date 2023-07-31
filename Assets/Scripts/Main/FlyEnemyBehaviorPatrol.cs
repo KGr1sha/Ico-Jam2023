@@ -62,16 +62,10 @@ namespace Assets.Scripts.Main
 
         private void ChangePatrolPoint()
         {
-            Flip();
             if (_currentPoint == _pointA)
                 _currentPoint = _pointB;
             else
                 _currentPoint = _pointA;
-        }
-
-        private void Flip()
-        {
-            _enemy.Flip();
         }
     }
 }

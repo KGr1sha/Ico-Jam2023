@@ -8,23 +8,36 @@ public class FlyEnemy : BaseEnemy
     public float PatrolRange = 2f;
 
     private FlyingEnemyStates _stateMachine;
+    private Rigidbody2D _rigidbody;
+    private Vector3 _baseScale;
 
     protected override void Start()
     {
         base.Start();
         _stateMachine = GetComponent<FlyingEnemyStates>();
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _baseScale = transform.localScale;
     }
 
     private void Update()
     {
-        
+        HandleFlip();
+        CheckForPlayer();
     }
 
-    public void Flip()
+    private void HandleFlip()
     {
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1;
+        Vector3 localScale = _baseScale;
+        if (_rigidbody.velocity.x > 0)
+        {
+            localScale.x = -_baseScale.x;
+        }
+        Debug.Log(localScale);
         transform.localScale = localScale;
-        Debug.Log("FLIIIP");
+    }
+
+    private void CheckForPlayer()
+    {
+
     }
 }
