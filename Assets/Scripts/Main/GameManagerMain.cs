@@ -22,10 +22,12 @@ public class GameManagerMain : MonoBehaviour
         if (data.Fragment1Collected)
         {
             Destroy(miniGame1);
-        } else if (data.Fragment2Collected)
+        }  
+        if (data.Fragment2Collected)
         {
             Destroy(miniGame2);
-        } else if(data.Fragment3Collected)
+        }
+        if(data.Fragment3Collected)
         {
             Destroy(miniGame3);
         }
