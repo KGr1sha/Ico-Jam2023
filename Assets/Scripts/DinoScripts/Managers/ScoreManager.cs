@@ -19,6 +19,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private int neededScoreCount;
 
     public static event Action<int> OnScoreChanged;
+    [SerializeField] private UnityEvent onPlayerWin;
 
     private IEnumerator ScoreCounter()
     {
@@ -27,8 +28,9 @@ public class ScoreManager : MonoBehaviour
             this.scoreCount += this.addScorePerIteration;
             OnScoreChanged?.Invoke(scoreCount);
 
-            if (this.scoreCount == neededScoreCount)
+            if (this.scoreCount >= neededScoreCount)
             {
+                onPlayerWin?.Invoke();
             }
 
             yield return new WaitForSeconds(this.iterationDelta);
