@@ -2717,8 +2717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fade_speed: 1
   bg: {fileID: 1852936631}
-  res: {fileID: 418659669}
-  cont: {fileID: 1011223887}
+  texts: []
 --- !u!212 &596119347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4721,7 +4720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1258644127
 Transform:
   m_ObjectHideFlags: 0
