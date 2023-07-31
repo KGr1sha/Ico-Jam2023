@@ -15,3 +15,4 @@ MonoBehaviour:
   Fragment1Collected: 0
   Fragment2Collected: 0
   Fragment3Collected: 0
+  PlayerPositionWhenStartMinigame: {x: 0, y: 0, z: 0}

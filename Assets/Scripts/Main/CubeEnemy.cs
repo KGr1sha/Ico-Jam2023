@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
+
 
 public class CubeEnemy : BaseEnemy
 {
@@ -74,6 +71,5 @@ public class CubeEnemy : BaseEnemy
         }
         transform.localScale = newScale;
         _facingDirection = newDirection;
-        
     }
 }
