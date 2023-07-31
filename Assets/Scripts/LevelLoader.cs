@@ -17,6 +17,7 @@ public class LevelLoader : MonoBehaviour
     private void Start()
     {
         _textMeshPro = _countdownObject.GetComponent<TextMeshProUGUI>();
+        _textMeshPro.text = "";
     }
 
     public void LoadScene(string name)
