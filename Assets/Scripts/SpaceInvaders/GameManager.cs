@@ -10,14 +10,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject gameOver;
     [SerializeField] private TextMeshProUGUI resultText;
 
-    public bool result;
+    public bool result = false;
 
     public CollectablesStatus data;
 
-    private void Start()
-    {
-       
-    }
     private void OnEnable()
     {
         PlayerLife.OnPlayerDie += Lose;
@@ -32,7 +28,6 @@ public class GameManager : MonoBehaviour
 
     private void Win()
     {
-        Debug.Log("CHICKEN DINNER");
         result = true;
         resultText.text = "You have received the second item!";
         data.Fragment2Collected = true;
@@ -40,9 +35,10 @@ public class GameManager : MonoBehaviour
     }
     private void Lose()
     {
-        Debug.Log("BIG BLACK");
-        result = false;
-        resultText.text = "You lose";
-        gameOver.SetActive(true);
+        if (result == false)
+        {
+            resultText.text = "You lose";
+            gameOver.SetActive(true);
+        }
     }
 }
