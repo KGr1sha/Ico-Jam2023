@@ -6,9 +6,7 @@ using System.Collections;
 public class Screen_fader : MonoBehaviour
 {
     [SerializeField] float fade_speed;
-
     [SerializeField] GameObject bg;
-
     [SerializeField] TextMeshProUGUI[] texts;
 
     private Image background;
