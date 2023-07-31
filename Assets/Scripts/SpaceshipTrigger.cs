@@ -9,6 +9,7 @@ public class SpaceshipTrigger : MonoBehaviour
     [SerializeField] private GameObject winScreen;
     [SerializeField] private GameObject ship;
     [SerializeField] private GameObject partickles;
+    [SerializeField] private GameObject winParticles;
 
     [SerializeField] Sprite shipRepaired;
 
@@ -49,9 +50,9 @@ public class SpaceshipTrigger : MonoBehaviour
                 putFargmetsText.text = "Congratulations!!!";
                 shipSprite.sprite = shipRepaired;
                 partickles.SetActive(false);
-                yield return new WaitForSeconds(2);
-                //animation
+                winParticles.SetActive(true);
                 yield return new WaitForSeconds(5);
+                winParticles.SetActive(false);
                 isShipRepaired = true;
             }
         }
