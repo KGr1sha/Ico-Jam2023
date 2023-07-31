@@ -50,7 +50,7 @@ public class CubeEnemy : BaseEnemy
         Vector3 targetPos = _groundCheckObject.position;
         targetPos.x -= castDist;
 
-        RaycastHit2D wallCast = Physics2D.Linecast(_groundCheckObject.position, targetPos);
+        RaycastHit2D wallCast = Physics2D.Linecast(_groundCheckObject.position, targetPos, _groundMask);
         RaycastHit2D groundCast = Physics2D.Raycast(_groundCheckObject.position, Vector2.down, 0.3f, _groundMask);
         if (wallCast.collider != null || groundCast.collider == null)
         {

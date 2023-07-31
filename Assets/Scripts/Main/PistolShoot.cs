@@ -7,6 +7,7 @@ public class PistolShoot : MonoBehaviour
     [SerializeField] private Transform _firePoint;
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _shootCD;
+    [SerializeField] private AudioSource _shotSound;
 
     private bool _canShoot = true;
 
@@ -22,6 +23,7 @@ public class PistolShoot : MonoBehaviour
     {
         Instantiate(_bulletPrefab, _firePoint.position, _firePoint.rotation);
         _canShoot = false;
+        _shotSound.Play();
         StartCoroutine(ShootCD());
     }
 
