@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698483ad86d120c43bb439cc8f4b5794, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  Fragment1Collected: 0
-  Fragment2Collected: 0
-  Fragment3Collected: 0
-  PlayerPositionWhenStartMinigame: {x: 0, y: 0, z: 0}
+  Fragment1Collected: 1
+  Fragment2Collected: 1
+  Fragment3Collected: 1
+  PlayerPositionWhenStartMinigame: {x: 108.7, y: -0.7, z: -0}

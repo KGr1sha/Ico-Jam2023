@@ -21,7 +21,6 @@ public class SpaceshipTrigger : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player")) {
             Debug.Log("Enter");
-            putFragmentsIn.SetActive(true);
             if (data.Fragment1Collected && data.Fragment2Collected && data.Fragment3Collected)
             {
                 putFargmetsText.text = "Press \"F\" to start the spaceship!";
@@ -30,6 +29,7 @@ public class SpaceshipTrigger : MonoBehaviour
             {
                 putFargmetsText.text = "You need to find all of the fragments";
             }
+            putFragmentsIn.SetActive(true);
         }
 
     }
