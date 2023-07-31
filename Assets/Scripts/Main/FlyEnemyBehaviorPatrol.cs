@@ -9,6 +9,8 @@ namespace Assets.Scripts.Main
     {
         private Vector2 _patrolPoint;
         private Rigidbody2D _rigidbody;
+        private Vector2 _pointA;
+        private Vector2 _pointB;
 
         private string LEFT = "left";
         private string RIGHT = "right";
@@ -30,31 +32,14 @@ namespace Assets.Scripts.Main
 
         public void Update(FlyingEnemyStates enemy)
         {
-            Move(enemy);
-            if (Vector2.Distance(enemy.transform.position, _patrolPoint) >= enemy.patrolRange)
-            {
-                if (_facingDirection == LEFT)
-                {
-                    ChangeDirection(enemy, RIGHT);
-                }
-                else
-                {
-                    ChangeDirection(enemy, LEFT);
-                }
-            }
+            
         }
 
-        private void ChangeDirection(FlyingEnemyStates enemy, string newDirecrion)
-        {
-            _facingDirection = newDirecrion;
-        }
+        
 
         private void Move(FlyingEnemyStates enemy)
         {
-            var vX = enemy.patrolSpeed;
-            if (_facingDirection == RIGHT)
-                vX = -enemy.patrolSpeed;
-            _rigidbody.velocity = new Vector2(vX, _rigidbody.velocity.y);
+            
         }
     }
 }
