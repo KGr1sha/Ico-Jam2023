@@ -1720,6 +1720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathScreen: {fileID: 417853994}
   winScreen: {fileID: 1606852932}
+  _data: {fileID: 11400000, guid: 97ee23bf0c3a2d24a8948f4c9c295d0a, type: 2}
 --- !u!4 &880803765
 Transform:
   m_ObjectHideFlags: 0
