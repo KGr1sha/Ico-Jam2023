@@ -1,14 +1,15 @@
 using Assets.Scripts.Main;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Security;
 using UnityEngine;
 
 public class FlyingEnemyStates : MonoBehaviour
 {
+    public Transform PlayerTransform => _mainScript.playerTransform;
     public float patrolSpeed => _mainScript.PatrolSpeed;
     public float patrolRange => _mainScript.PatrolRange;
+    public float chaseSpeed => _mainScript.ChaseSpeed;
+    public float groundLayer => _mainScript.GroundLayer;
 
     private Dictionary<Type, IFlyEnemyBehaviour> _begavioursMap;
     private IFlyEnemyBehaviour _currentBehaviour;
