@@ -15938,6 +15938,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1539752990114604644, guid: 7c749841b09e12a4994dbde9554725aa, type: 3}
+      propertyPath: PlayerTransform
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068956817538594960, guid: 7c749841b09e12a4994dbde9554725aa, type: 3}
+      propertyPath: _agroDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068956817538594960, guid: 7c749841b09e12a4994dbde9554725aa, type: 3}
+      propertyPath: _playerTransform
+      value: 
+      objectReference: {fileID: 1377685194}
+    - target: {fileID: 3068956817538594960, guid: 7c749841b09e12a4994dbde9554725aa, type: 3}
+      propertyPath: _playerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4101863415250467032, guid: 7c749841b09e12a4994dbde9554725aa, type: 3}
       propertyPath: m_IsTrigger
       value: 0
