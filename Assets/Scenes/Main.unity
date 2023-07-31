@@ -7253,7 +7253,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1833acd7afee3174985b54605f574595, type: 3}
---- !u!1001 &239050422
+--- !u!1&239050422
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -104058,7 +104058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _aimTransform: {fileID: 276213687}
-  _pistolAngle: 60
+  _pistolAngle: 55
 --- !u!114 &1377685199
 MonoBehaviour:
   m_ObjectHideFlags: 0
