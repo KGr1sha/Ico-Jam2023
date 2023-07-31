@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        Physics2D.gravity = new Vector2(0f, -9.8f) * _gravityScale;
         _rigidbody = GetComponent<Rigidbody2D>();
         _collider = GetComponent<BoxCollider2D>();
         _flipScript = GetComponent<FlipPlayer>();
