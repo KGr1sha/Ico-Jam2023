@@ -121862,6 +121862,9 @@ MonoBehaviour:
   putFragmentsIn: {fileID: 416407845}
   data: {fileID: 11400000, guid: 97ee23bf0c3a2d24a8948f4c9c295d0a, type: 2}
   winScreen: {fileID: 1923811736}
+  ship: {fileID: 72752579}
+  partickles: {fileID: 1540581549}
+  shipRepaired: {fileID: 21300000, guid: 32c39c6578b00184c94e033caea0e392, type: 3}
 --- !u!61 &1631827122
 BoxCollider2D:
   m_ObjectHideFlags: 0
