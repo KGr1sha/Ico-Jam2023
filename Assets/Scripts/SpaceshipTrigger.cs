@@ -50,12 +50,12 @@ public class SpaceshipTrigger : MonoBehaviour
             if (Input.GetButtonDown("Start") && data.Fragment1Collected && data.Fragment2Collected && data.Fragment3Collected && !isShipRepaired)
             {
                 putFargmetsText.text = "Congratulations!!!";
-                shipSprite.sprite = shipRepaired;
                 partickles.SetActive(false);
-                yield return new WaitForSeconds(1.5f);
                 OnShipRepare?.Invoke();
+                yield return new WaitForSeconds(1.5f);
+                shipSprite.sprite = shipRepaired;
                 winParticles.SetActive(true);
-                yield return new WaitForSeconds(5);
+                yield return new WaitForSeconds(7);
                 winParticles.SetActive(false);
                 isShipRepaired = true;
             }
