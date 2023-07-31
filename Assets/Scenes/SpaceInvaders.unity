@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 150
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 717eb77a329703e4a8ba89e76751d606, type: 2}
   m_sharedMaterial: {fileID: -2455334677183964656, guid: 717eb77a329703e4a8ba89e76751d606, type: 2}
@@ -3428,7 +3428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scoreText: {fileID: 1219845518}
   _scorePerEnemy: 5
-  _goalScore: 100
+  _goalScore: 150
 --- !u!1 &1011223887
 GameObject:
   m_ObjectHideFlags: 0
