@@ -1,6 +1,7 @@
 ﻿using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.VFX;
 
 namespace Assets.Scripts.Main
 {
@@ -32,28 +33,28 @@ namespace Assets.Scripts.Main
             Move(enemy);
             if (Vector2.Distance(enemy.transform.position, _patrolPoint) >= enemy.patrolRange)
             {
-                ChangeDirection(enemy);
+                if (_facingDirection == LEFT)
+                {
+                    ChangeDirection(enemy, RIGHT);
+                }
+                else
+                {
+                    ChangeDirection(enemy, LEFT);
+                }
             }
         }
 
-        private void ChangeDirection(FlyingEnemyStates enemy)
+        private void ChangeDirection(FlyingEnemyStates enemy, string newDirecrion)
         {
-            if (_facingDirection == LEFT)
-                _facingDirection = RIGHT;
-            else if (_facingDirection == RIGHT)
-                _facingDirection = LEFT;
+            _facingDirection = newDirecrion;
         }
 
         private void Move(FlyingEnemyStates enemy)
         {
-            if (_facingDirection == LEFT)
-            {
-                _rigidbody.velocity = Vector2.left * enemy.patrolSpeed;
-            }
-            else if (_facingDirection == RIGHT)
-            {
-                _rigidbody.velocity = Vector2.right * enemy.patrolSpeed;
-            }
+            var vX = enemy.patrolSpeed;
+            if (_facingDirection == RIGHT)
+                vX = -enemy.patrolSpeed;
+            _rigidbody.velocity = new Vector2(vX, _rigidbody.velocity.y);
         }
     }
 }
