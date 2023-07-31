@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _gravityScale;
     [SerializeField] private LayerMask _groundLayerMask;
     [SerializeField] private Animator _animator;
+    [SerializeField] private AudioSource _jumpSound;
 
     private FlipPlayer _flipScript;
     private BoxCollider2D _collider;
@@ -55,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
     private void Jump()
     {
         _rigidbody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
+        _jumpSound.Play();
     }
 
     private bool IsGrounded()
