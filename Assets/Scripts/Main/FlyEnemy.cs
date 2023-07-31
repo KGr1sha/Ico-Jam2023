@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class FlyEnemy : BaseEnemy
 {
-    [SerializeField] private Transform _playerTransform;
     [SerializeField] private float _agroDistance;
+    [SerializeField] private LayerMask _playerMask;
 
     public float ChaseSpeed = 3f;
     public float PatrolSpeed = 1f;
     public float PatrolRange = 2f;
+    public Transform playerTransform { get; private set; }
 
     private FlyingEnemyStates _stateMachine;
     private Rigidbody2D _rigidbody;
@@ -34,15 +35,17 @@ public class FlyEnemy : BaseEnemy
         {
             localScale.x = -_baseScale.x;
         }
-        Debug.Log(localScale);
         transform.localScale = localScale;
     }
 
     private void CheckForPlayer()
     {
-        if (Vector3.Distance(transform.position, _playerTransform.position) < _agroDistance)
+        RaycastHit2D cast = Physics2D.CircleCast(transform.position, _agroDistance, Vector2.up, 0.1f, _playerMask);
+
+        if (cast.collider != null)
         {
             _stateMachine.SetBehaviourAgressive();
+            playerTransform = cast.transform;
         }
     }
 }

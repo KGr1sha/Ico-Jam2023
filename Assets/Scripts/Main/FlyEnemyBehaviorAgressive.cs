@@ -15,7 +15,6 @@ namespace Assets.Scripts.Main
 
         public void Exit(FlyingEnemyStates enemy)
         {
-            Debug.Log("Exit agressive state");
         }
 
         public void Update(FlyingEnemyStates enemy)

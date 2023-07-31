@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class FlyingEnemyStates : MonoBehaviour
 {
-    public Transform PlayerTransform;
-
+    public Transform PlayerTransform => _mainScript.playerTransform;
     public float patrolSpeed => _mainScript.PatrolSpeed;
     public float patrolRange => _mainScript.PatrolRange;
     public float chaseSpeed => _mainScript.ChaseSpeed;
