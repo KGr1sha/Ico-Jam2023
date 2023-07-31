@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpaceInvaders.unity
     guid: 13b6702ad851a214094294a9f8f12901
+  - enabled: 1
+    path: Assets/Scenes/Dinoogle.unity
+    guid: 7fff861ccfa523d4da3aa5dced727cf7
   m_configObjects: {}
