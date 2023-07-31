@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpaceshipTrigger : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class SpaceshipTrigger : MonoBehaviour
     [SerializeField] private GameObject ship;
     [SerializeField] private GameObject partickles;
 
+    [SerializeField] private UnityEvent OnShipRepare;
     [SerializeField] Sprite shipRepaired;
 
     private TMP_Text putFargmetsText;
@@ -49,8 +51,8 @@ public class SpaceshipTrigger : MonoBehaviour
                 putFargmetsText.text = "Congratulations!!!";
                 shipSprite.sprite = shipRepaired;
                 partickles.SetActive(false);
-                yield return new WaitForSeconds(2);
-                //animation
+                yield return new WaitForSeconds(1.5f);
+                OnShipRepare?.Invoke();
                 yield return new WaitForSeconds(5);
                 isShipRepaired = true;
             }
