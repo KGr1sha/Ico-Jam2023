@@ -8,31 +8,27 @@ public class Screen_fader : MonoBehaviour
     [SerializeField] float fade_speed;
 
     [SerializeField] GameObject bg;
-    [SerializeField] GameObject res;
-    [SerializeField] GameObject cont;
+
+    [SerializeField] TextMeshProUGUI[] texts;
 
     private Image background;
-    private TMP_Text result;
-    private TMP_Text continue_t;
 
     private IEnumerator Start()
     {
         background = bg.GetComponent<Image>();
-        result = res.GetComponent<TMP_Text>();
-        continue_t = cont.GetComponent<TMP_Text>();
 
         Color color_bg = background.color;
-        Color color_res = result.color;
-        Color color_cont = continue_t.color;
+        Color color_text = texts[0].color;
 
         while(color_bg.a < 1f)
         {
             color_bg.a += fade_speed * Time.deltaTime;
-            color_res.a += fade_speed * Time.deltaTime;
-            color_cont.a += fade_speed * Time.deltaTime;
+            color_text.a += fade_speed * Time.deltaTime;
             background.color = color_bg;
-            result.color = color_res;
-            continue_t.color = color_cont;
+            for(int i = 0; i < texts.Length; i++)
+            {
+                texts[i].color = color_text;
+            }
             yield return null;
         }
     }
