@@ -15,4 +15,5 @@ MonoBehaviour:
   Fragment1Collected: 0
   Fragment2Collected: 0
   Fragment3Collected: 0
-  PlayerPositionWhenStartMinigame: {x: 105.479095, y: -4.2419395, z: 0}
+  PlayerPositionWhenStartMinigame: {x: 108.7, y: -0.7, z: -0}
+

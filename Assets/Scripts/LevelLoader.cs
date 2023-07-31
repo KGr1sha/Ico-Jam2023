@@ -9,6 +9,7 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] private float _transitionTime = 1f;
     [SerializeField] private GameObject _countdownObject;
     [SerializeField] private float _countdownTime;
+    [SerializeField] private AudioSource _timerSound;
 
     private TextMeshProUGUI _textMeshPro;
     
@@ -38,6 +39,7 @@ public class LevelLoader : MonoBehaviour
 
     private IEnumerator CountDown()
     {
+        _timerSound.Play();
         for (int i = 3; i > 0; i--)
         {
             _textMeshPro.text = i.ToString();

@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int _maxHealth;
     [SerializeField] private int animationTime;
     [SerializeField] private GameObject DeathScreen;
+    [SerializeField] private AudioSource _deathSound;
 
     private DetailsResultText detailsResultText;
 
@@ -29,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
     }
      private void Die()
     {
-        Debug.Log("YOU DIED");
+        _deathSound.Play();
         //play animation
         //yield return new WaitForSeconds(animationTime);
         detailsResultText.ResultChanger();
