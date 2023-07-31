@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject resultObj;
     [SerializeField] GameObject gameOver;
-    private TMP_Text resultText;
+    [SerializeField] private TextMeshProUGUI resultText;
 
     public bool result;
 
@@ -15,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        resultText = resultObj.GetComponent<TMP_Text>();
+       
     }
     private void OnEnable()
     {

@@ -1248,7 +1248,6 @@ GameObject:
   - component: {fileID: 418659670}
   - component: {fileID: 418659673}
   - component: {fileID: 418659672}
-  - component: {fileID: 418659671}
   m_Layer: 5
   m_Name: Result
   m_TagString: Untagged
@@ -1276,20 +1275,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &418659671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418659669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94a67f495814c34e853a56b3ff464be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  result: 0
-  data: {fileID: 11400000, guid: 97ee23bf0c3a2d24a8948f4c9c295d0a, type: 2}
 --- !u!114 &418659672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2974,6 +2959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resultObj: {fileID: 418659669}
   gameOver: {fileID: 596119344}
+  resultText: {fileID: 418659672}
   result: 0
   data: {fileID: 11400000, guid: 97ee23bf0c3a2d24a8948f4c9c295d0a, type: 2}
 --- !u!1001 &776881014
@@ -3236,6 +3222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47114bb78cfe9a946a27617e1e66ccad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 0}
 --- !u!114 &865060737
 MonoBehaviour:
   m_ObjectHideFlags: 0

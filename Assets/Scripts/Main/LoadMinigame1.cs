@@ -4,6 +4,9 @@ public class LoadMinigame1 : MonoBehaviour
 {
     [SerializeField] private LevelLoader _levelLoader;
     [SerializeField] private string _sceneToLoad;
+    [SerializeField] private GameObject player;
+
+    public CollectablesStatus data;
 
     private bool _activated = false;
 
@@ -12,6 +15,7 @@ public class LoadMinigame1 : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && _activated == false)
         {
             _activated = true;
+            data.PlayerPositionWhenStartMinigame = player.transform.position;
             _levelLoader.LoadScene(_sceneToLoad);
         }
     }
