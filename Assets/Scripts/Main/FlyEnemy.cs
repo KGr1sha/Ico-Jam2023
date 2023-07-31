@@ -8,6 +8,7 @@ public class FlyEnemy : BaseEnemy
     public float ChaseSpeed = 3f;
     public float PatrolSpeed = 1f;
     public float PatrolRange = 2f;
+    public Transform playerTransform { get; private set; }
 
     private FlyingEnemyStates _stateMachine;
     private Rigidbody2D _rigidbody;
@@ -34,7 +35,6 @@ public class FlyEnemy : BaseEnemy
         {
             localScale.x = -_baseScale.x;
         }
-        Debug.Log(localScale);
         transform.localScale = localScale;
     }
 
@@ -45,7 +45,7 @@ public class FlyEnemy : BaseEnemy
         if (cast.collider != null)
         {
             _stateMachine.SetBehaviourAgressive();
-            _stateMachine.PlayerTransform = cast.transform;
+            playerTransform = cast.transform;
         }
     }
 }

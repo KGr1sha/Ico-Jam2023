@@ -1,7 +1,5 @@
-﻿using Unity.VisualScripting;
-using UnityEditor;
-using UnityEngine;
-using UnityEngine.VFX;
+﻿using UnityEngine;
+
 
 namespace Assets.Scripts.Main
 {
@@ -18,7 +16,6 @@ namespace Assets.Scripts.Main
         public void Enter(FlyingEnemyStates enemy)
         {
             _enemy = enemy;
-            Debug.Log("Enter patrol state");
             _patrolPoint = enemy.transform.position;
             _rigidbody = enemy.GetComponent<Rigidbody2D>();
             InitPatrolPoints();
@@ -26,7 +23,6 @@ namespace Assets.Scripts.Main
 
         public void Exit(FlyingEnemyStates enemy)
         {
-            Debug.Log("Exit patrol state");
         }
 
         public void Update(FlyingEnemyStates enemy)
@@ -34,7 +30,7 @@ namespace Assets.Scripts.Main
             Move();
 
             var distanceToPoint = Vector2.Distance(_enemy.transform.position, new Vector3(_currentPoint.x, _currentPoint.y, 0f));
-            //Debug.Log(distanceToPoint);
+
             if (distanceToPoint < 0.5f)
             {
                 ChangePatrolPoint();
