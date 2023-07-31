@@ -37,7 +37,7 @@ public class MapMover : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(0.1f);
-            this.speed *= boostSpeedPerSecond / 10;
+            this.speed *= boostSpeedPerSecond;
 
             this.speed = Mathf.Clamp(this.speed, this.minSpeed, this.maxSpeed);
 
@@ -47,6 +47,7 @@ public class MapMover : MonoBehaviour
     public void onGameStart()
     {
         StartCoroutine(routine: SpeedCounter());
+        this.isPlay = true;
     }
 
     public void OnPause() => this.isPlay = false;

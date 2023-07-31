@@ -35,7 +35,7 @@ public class Character : MonoBehaviour
                 break;
         }
     }
-    private void OnJumpButtonDown()
+    public void OnJumpButtonDown()
     {
         if (this.characterMovement.IsGround())
         {
@@ -45,7 +45,7 @@ public class Character : MonoBehaviour
         }  
     }   
     
-    private void OnCrouchButtonDown()
+    public void OnCrouchButtonDown()
     {
         if (this.characterMovement.IsGround())
         {
@@ -54,16 +54,16 @@ public class Character : MonoBehaviour
         }
     }
 
-    private void OnCrouchButtonUp()
+    public void OnCrouchButtonUp()
     {
-        if (this.characterMovement.IsGround())
-        {
-            this.characterAnimation.SetIsGround(false);
+        //if (this.characterMovement.IsGround())
+        //{
+            this.characterAnimation.SetCrouchRun(false);
             this.crouchRunEnd?.Invoke();
-        }
+        //}
     }
 
-    private void OnGameStart()
+    public void OnGameStart()
     {
         this.characterAnimation.SetGameStart();
     }
