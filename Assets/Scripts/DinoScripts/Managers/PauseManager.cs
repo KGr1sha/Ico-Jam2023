@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,23 +7,26 @@ public class PauseManager : MonoBehaviour
     [SerializeField] private GameObject deathScreen;
     [SerializeField] private GameObject winScreen;
     [SerializeField] private CollectablesStatus _data;
+    [SerializeField] private MapMover _mapScript;
 
     public void DeathPause()
     {
         this.deathScreen.SetActive(true);
-        Time.timeScale = 0;
+        _mapScript.isPlay = false;
+        StartCoroutine(ReturnToMain());
     }
 
     public void WinPause()
     {
         this.winScreen.SetActive(true);
-        Time.timeScale = 0;
+        _mapScript.isPlay = false;
         _data.Fragment3Collected = true;
-        LoadMain();
+        StartCoroutine(ReturnToMain());
     }
 
-    private void LoadMain()
+    private IEnumerator ReturnToMain()
     {
+        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("Main");
     }
 
