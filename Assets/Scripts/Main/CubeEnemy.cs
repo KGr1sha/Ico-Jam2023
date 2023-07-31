@@ -71,6 +71,5 @@ public class CubeEnemy : BaseEnemy
         }
         transform.localScale = newScale;
         _facingDirection = newDirection;
-        
     }
 }

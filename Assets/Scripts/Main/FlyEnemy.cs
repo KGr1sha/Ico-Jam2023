@@ -19,4 +19,12 @@ public class FlyEnemy : BaseEnemy
     {
         
     }
+
+    public void Flip()
+    {
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
+        Debug.Log("FLIIIP");
+    }
 }

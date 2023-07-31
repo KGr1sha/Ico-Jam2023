@@ -14,6 +14,11 @@ public class FlyingEnemyStates : MonoBehaviour
     private IFlyEnemyBehaviour _currentBehaviour;
     private FlyEnemy _mainScript;
 
+    public void Flip()
+    {
+        _mainScript.Flip();
+    }
+
     public void SetBehaviourPatrol()
     {
         var behaviour = GetBehaviour<FlyEnemyBehaviorPatrol>();

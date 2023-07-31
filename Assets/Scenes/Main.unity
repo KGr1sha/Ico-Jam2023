@@ -10529,6 +10529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 3
   PatrolSpeed: 2
+  PatrolRange: 4
 --- !u!212 &387833023
 SpriteRenderer:
   m_ObjectHideFlags: 0
