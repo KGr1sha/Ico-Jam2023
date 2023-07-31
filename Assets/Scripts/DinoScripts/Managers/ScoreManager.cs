@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using System;
 using UnityEngine.Events;
 
 public class ScoreManager : MonoBehaviour
@@ -17,14 +18,14 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private int scoreCount;
     [SerializeField] private int neededScoreCount;
 
-    [SerializeField] private UnityEvent<int> scoreChanged;
+    public static event Action<int> OnScoreChanged;
 
     private IEnumerator ScoreCounter()
     {
         while(true)
         {
             this.scoreCount += this.addScorePerIteration;
-            this.scoreChanged?.Invoke(this.scoreCount);
+            OnScoreChanged?.Invoke(scoreCount);
 
             if (this.scoreCount == neededScoreCount)
             {

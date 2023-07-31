@@ -12,7 +12,16 @@ public class ScorePresenter : MonoBehaviour
     private void Awake()
     {
         if (this.scoreText == null) this.scoreText = GetComponent<Text>();
+        ScoreManager.OnScoreChanged += UpdateText;
     }
 
-    public void OnScoreChanged(int score) => this.scoreText.text = score.ToString(); 
+    private void UpdateText(int val)
+    {
+        scoreText.text = val.ToString();
+    }
+
+    private void OnDisable()
+    {
+        ScoreManager.OnScoreChanged -= UpdateText;
+    }
 }
